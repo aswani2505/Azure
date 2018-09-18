@@ -1,0 +1,115 @@
+
+{
+  "Modules": {
+    "Module": [
+      {
+        "Name": "Resources",
+        "Description": "Returns information on azure resources",
+        "Script": "C9_Resources.ps1",
+        "Author": "Ken Channon",
+        "SParameter": { "Name": "SubscriptionName" },
+        "SParameter": { "Name": "SubscriptionName" },
+        "ModuleVersion": {
+          "Name": "AzureRM.Resources",
+          "Value": "4"
+        }
+      },
+      {
+        "Name": "StorageAccountBlobs",
+        "Description": "Lists Blobs in storage accounts ",
+        "Script": "C9_SABlobs.ps1",
+        "Author": "Ken Channon",
+        "SParameter": { "Name": "SubscriptionName" },
+        "ModuleVersion": {
+          "Name": "AzureRM.Storage",
+          "Value": "3"
+        }
+      },
+      {
+        "Name": "OldStorageAccountBlobs",
+        "Description": "Lists Blobs in storage accounts ",
+        "Script": "C9_SABlobs.ps1",
+        "Author": "Ken Channon",
+        "SParameter": { "Name": "SubscriptionName" },
+        "OParameter": {
+          "Name": "DaysOld",
+          "Value": "90"
+        },
+        "ModuleVersion": {
+          "Name": "AzureRM.Storage",
+          "Value": "3"
+        }
+      }, 
+     {
+        "Name": "StorageAccountContainer",
+        "Description": "Returns information on azure Storage account containers",
+        "Script": "C9_SAContrainerInfo.ps1",
+        "Author": "Ken Channon",
+        "SParameter": { "Name": "SubscriptionName" },
+        "OParameter": {
+          "Name": "Unit",
+          "Value": "MB"
+        },
+        "ModuleVersion": {
+          "Name": "AzureRM.Storage",
+          "Value": "3"
+        }
+      },
+      {
+        "Name": "StorageAccountDisks",
+        "Description": "Returns information on VHDs in storage accounts ",
+        "Script": "C9_SADisks.ps1",
+        "Author": "Ken Channon",
+        "SParameter": { "Name": "SubscriptionName" },
+        "ModuleVersion": {
+          "Name": "AzureRM",
+          "Value": "4"
+        }
+      },
+      {
+        "Name": "ManagedDisks",
+        "Description": "Returns information on Managed Disks ",
+        "Script": "C9_managedDisks.ps1",
+        "Author": "Ken Channon",
+        "SParameter": { "Name": "SubscriptionName" },
+        "ModuleVersion": {
+          "Name": "AzureRM",
+          "Value": "4"
+      }
+      },
+      {
+        "Name": "NetworkInterfaces",
+        "Description": "Returns information on azure Network Interfaces ",
+        "Script": "C9_NetworkInterface.ps1",
+        "Author": "Ken Channon",
+        "SParameter": { "Name": "SubscriptionName" },
+        "ModuleVersion": {
+          "Name": "AzureRM.Network",
+          "Value": "4"
+        }
+      },
+      {
+        "Name": "VirtualMachines",
+        "Description": "Returns information on azure Virtual Machines ",
+        "Script": "C9_VirtualMachine.ps1",
+        "Author": "Ken Channon",
+        "SParameter": { "Name": "SubscriptionName" },
+        "ModuleVersion": {
+          "Name": "AzureRM",
+          "Value": "4"
+        }
+      },
+      {
+        "Name": "VMUsage",
+        "Description": "Returns information on cores used versus limits ",
+        "Script": "C9_VMUsage.ps1",
+        "Author": "Ken Channon",
+        "SParameter": { "Name": "SubscriptionName" },
+        "ModuleVersion": {
+          "Name": "AzureRM",
+          "Value": "4"
+        }
+      }
+    ]
+  }
+}
