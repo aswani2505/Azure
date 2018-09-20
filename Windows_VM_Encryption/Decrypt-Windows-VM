@@ -80,7 +80,7 @@
 
     "encryptionOperation": "DisableEncryption",
 
-    "updateEncryptionSettingsUrl": "[concat('https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-decrypt-running-windows-vm/updateEncryptionSettings-',parameters('volumeType'),'.json')]"
+    "updateEncryptionSettingsUrl": "[concat('https://raw.githubusercontent.com/aswani2505/Azure/master/Windows_VM_Encryption/updateEncryptionSettings-All',parameters('volumeType'),'.json')]"
 
   },
 
